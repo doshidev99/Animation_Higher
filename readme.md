@@ -6,5 +6,6 @@ Each Branch follow
     }
 ```
 
-![alt](./Screen Shot 2019-10-22 at 5.30.03 PM.png)
-![alt]('./Screen Shot 2019-10-22 at 5.30.09 PM.png')
+![alt](https://i.ibb.co/8s7xwbQ/Screen-Shot-2019-10-22-at-5-30-09-PM.png)
+
+![alt](https://i.ibb.co/X2XZgzD/Screen-Shot-2019-10-22-at-5-30-03-PM.png)
