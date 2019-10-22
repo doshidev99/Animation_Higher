@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background: #1d1d1d;
+        color: #f9db02;
+    }
+    .wrapper {
+        margin-top: 100px;
+    }
+    input {
+        display: block;
+        border: 0;
+        width: 100%;
+        border-bottom: 1px solid #5e5e5e;
+        background: none;
+        outline: 0;
+        color: #f9db02;
+    }
+    .tab-Ani {
+        position: relative;
+        background: red;
+        display: block;
+    }
+    .tab-Ani::before,
+    .tab-Ani::after {
+        content: '';
+        height: 2px;
+        bottom: 0;
+        width: 0%;
+        position: absolute;
+        background: #2cb680; 
+        transition: 0.3s ease all; 
+    }
+    .tab-Ani::before {
+        left: 50%;
+    }
+    .tab-Ani::after {
+        right: 50%;
+    }
+    .wrapper input:focus ~ .tab-Ani::before,
+    .wrapper input:focus ~ .tab-Ani::after {
+        width: 50%;
+    }
+</style>
+<body>
+    <h1 class="text-center"> Hover Input translate</h1>
+    <div class="wrapper col-6 mx-auto">
+        <input type="text" >
+        <span class="tab-Ani"></span>
+    </div>
+</body>
+</html>
